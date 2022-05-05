@@ -1,7 +1,6 @@
 @all
-
 Feature: Sign in
-
+  @positive
   Scenario: positive sign in
     Given user goes to base url
     And user clicks to sign in button
@@ -10,7 +9,7 @@ Feature: Sign in
     And user clicks sign in
     Then user verifies that sees your profile
     Then user signs out
-
+  @negative
   Scenario: negative sign in
     Given user goes to base url
     And user clicks to sign in button
