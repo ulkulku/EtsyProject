@@ -93,7 +93,7 @@ public class Locaters {
     @FindBy (xpath = "(//span[@class='etsy-icon'])[14]")
     public WebElement favoritesButton;
 
-    @FindBy(xpath = "(//button[@type='button'])[4]")
+    @FindBy(xpath = "(//button[@type='button'])[5]")
     public WebElement createCollection;
 
     @FindBy(xpath = "(//input[@id='create-list-title'])[2]")
@@ -105,7 +105,7 @@ public class Locaters {
     @FindBy(xpath ="//p[@class='wt-text-caption-title wt-text-truncate--multi-line wt-break-word tab-title']")
     public List<WebElement> collectionList;
 
-    @FindBy(xpath="(//span[@class='etsy-icon'])[8]")
+    @FindBy(xpath="(//span[@class='etsy-icon'])[10]")
     public WebElement editButton;
 
     @FindBy(xpath = "(//button[@type='button'])[17]")
@@ -117,7 +117,7 @@ public class Locaters {
     @FindBy(xpath = "(//img[@class='wt-circle wt-icon'])[2]")
     public WebElement profile2;
 
-    @FindBy(xpath ="(//p[@class='wt-text-caption-title wt-text-truncate--multi-line wt-break-word tab-title'])[3]")
+    @FindBy(xpath ="(//div[@class='border-tile'])[3]")//"(//p[@class='wt-text-caption-title wt-text-truncate--multi-line wt-break-word tab-title'])[1]")
     public WebElement collectionItem;
 
     @FindBy(xpath = "(//button[@class='wt-btn wt-btn--filled'])[3]")

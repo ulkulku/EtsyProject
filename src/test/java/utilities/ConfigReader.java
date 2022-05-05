@@ -9,9 +9,9 @@ public class ConfigReader {
     static Properties properties;
 
     static {
-        String dosyaYolu="configuration.properties";
+        String filePath="config.properties";
         try {
-            FileInputStream fileInputStream=new FileInputStream(dosyaYolu);
+            FileInputStream fileInputStream=new FileInputStream(filePath);
             properties=new Properties();
             properties.load(fileInputStream);
         } catch (FileNotFoundException e) {

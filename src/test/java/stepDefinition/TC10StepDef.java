@@ -15,9 +15,10 @@ public class TC10StepDef {
     String itemName;
 
     @Given("user clicks collection")
-    public void user_clicks_collection() {
+    public void user_clicks_collection() throws InterruptedException {
         Log.startTestCase("Edit collection testing");
         itemName=locater.collectionItem.getText();
+        Thread.sleep(2000);
         locater.collectionItem.click();
     }
 
